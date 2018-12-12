@@ -4,14 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "babel": "babel src/* -d dist/",
     "md2html": "node ./build/md2html.js"
   },
   "author": "ryanlid",
   "license": "MIT",
   "dependencies": {
-    "marked": "^0.5.2"
+    "@babel/polyfill": "^7.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "marked": "^0.5.2",
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0"
+  },
   "keywords": [],
   "repository": {
     "type": "git",
