@@ -1,0 +1,24 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "md2html": "node ./build/md2html.js"
+  },
+  "author": "ryanlid",
+  "license": "MIT",
+  "dependencies": {
+    "marked": "^0.5.2"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanlid/sandbox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanlid/sandbox/issues"
+  },
+  "homepage": "https://github.com/ryanlid/sandbox#readme"
+}
