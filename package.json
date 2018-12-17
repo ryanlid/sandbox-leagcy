@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "babel": "babel src/* -d dist/",
-    "md2html": "node ./build/md2html.js"
+    "git": "git checkout -b dist && git add -A && git commit -m 'auto commit to dist' && git push -f origin dist && git checkout master && git branch -D dist ",
+    "md2html": "node ./build/md2html.js",
+    "publish": "npm run rm && npm run babel && npm run md2html && npm run git",
+    "rm": "rm -r dist/* &"
   },
   "author": "ryanlid",
   "license": "MIT",
@@ -13,10 +16,11 @@
     "@babel/polyfill": "^7.0.0"
   },
   "devDependencies": {
-    "marked": "^0.5.2",
     "@babel/cli": "^7.2.0",
     "@babel/core": "^7.2.0",
-    "@babel/preset-env": "^7.2.0"
+    "@babel/preset-env": "^7.2.0",
+    "marked": "^0.5.2",
+    "rimraf": "^2.6.2"
   },
   "keywords": [],
   "repository": {
