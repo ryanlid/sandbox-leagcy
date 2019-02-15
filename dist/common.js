@@ -14,8 +14,8 @@ function githubRibbons(url) {
     url = 'https://gist.github.com/' + url;
   }
 
-  aEl.setAttribute('href', url); // aEl.innerHTML = '<img style="position: absolute; top: 0; right: 0; border: 0;" src="' + imgUrl + '?rf=' + url + '" alt="Fork me on GitHub">'
-
+  aEl.setAttribute('href', url);
+  aEl.setAttribute('target', '_blank');
   aEl.innerHTML = '<img style="position: absolute; top: 0; right: 0; border: 0;" src="' + imgUrl + '" alt="Fork me on GitHub">';
   document.body.append(aEl);
 }
