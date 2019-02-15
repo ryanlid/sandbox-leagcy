@@ -1,7 +1,7 @@
 # sandbox
 
 ## content
-[sandbox list](./src/)
+[sandbox list](./src/index.md)
 
 ## feature
 
